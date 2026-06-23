@@ -4,8 +4,8 @@ A Neovim colorscheme plugin for [Flexoki](https://github.com/kepano/flexoki), St
 
 `flexoki.nvim` ships light and dark variants and defaults to the current `background` value, so this works without setup:
 
-```vim
-colorscheme flexoki
+```lua
+vim.cmd.colorscheme("flexoki")
 ```
 
 ## Palette Preview
@@ -68,10 +68,10 @@ With `lazy.nvim`:
 
 ## Usage
 
-```vim
-colorscheme flexoki
-colorscheme flexoki-light
-colorscheme flexoki-dark
+```lua
+vim.cmd.colorscheme("flexoki")
+vim.cmd.colorscheme("flexoki-light")
+vim.cmd.colorscheme("flexoki-dark")
 ```
 
 The default `flexoki` entry follows `vim.o.background`. `flexoki-light` and `flexoki-dark` force the matching background value.
