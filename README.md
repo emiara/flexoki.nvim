@@ -30,11 +30,32 @@ colorscheme flexoki
 
 ## Installation
 
+With `vim.pack` (Neovim 0.12+):
+
+```lua
+vim.pack.add({
+  "https://github.com/emiara/flexoki.nvim",
+})
+
+require("flexoki").setup({})
+vim.cmd.colorscheme("flexoki")
+```
+
+To pin to a specific tag or branch:
+
+```lua
+vim.pack.add({
+  { src = "https://github.com/emiara/flexoki.nvim", version = "v1.0.0" },
+})
+```
+
+Update plugins with `:h vim.pack.update()` and inspect installed plugins with `:h vim.pack.get()`. See this great [vim.pack guide](https://echasnovski.com/blog/2026-03-13-a-guide-to-vim-pack) for details.
+
 With `lazy.nvim`:
 
 ```lua
 {
-  "yourname/flexoki.nvim",
+  "emiara/flexoki.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
