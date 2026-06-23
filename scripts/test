@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+nvim -i NONE -l tests/minit.lua tests/colorscheme_spec.lua
+nvim -i NONE -l tests/minit.lua tests/groups_spec.lua
